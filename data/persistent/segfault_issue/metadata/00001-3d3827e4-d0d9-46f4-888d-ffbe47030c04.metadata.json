@@ -1,0 +1,374 @@
+{
+  "format-version": 2,
+  "table-uuid": "2603a3bb-b3d8-46b5-aac0-ad3ce3bde25b",
+  "location": "data/persistent/segfault_issue/",
+  "last-sequence-number": 1,
+  "last-updated-ms": 1751125274080,
+  "last-column-id": 47,
+  "current-schema-id": 0,
+  "schemas": [
+    {
+      "type": "struct",
+      "schema-id": 0,
+      "fields": [
+        {
+          "id": 1,
+          "name": "MsgType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "id": 2,
+          "name": "SendingTime",
+          "required": false,
+          "type": "timestamptz"
+        },
+        {
+          "id": 3,
+          "name": "SenderCompID",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "id": 4,
+          "name": "TargetCompID",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "id": 5,
+          "name": "Side",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "id": 6,
+          "name": "TransactTime",
+          "required": false,
+          "type": "timestamptz"
+        },
+        {
+          "id": 7,
+          "name": "OrderQty",
+          "required": false,
+          "type": "double"
+        },
+        {
+          "id": 8,
+          "name": "Instrument",
+          "required": false,
+          "type": {
+            "type": "struct",
+            "fields": [
+              {
+                "id": 31,
+                "name": "Symbol",
+                "required": false,
+                "type": "string"
+              },
+              {
+                "id": 32,
+                "name": "Product",
+                "required": false,
+                "type": "string"
+              },
+              {
+                "id": 33,
+                "name": "SecurityID",
+                "required": false,
+                "type": "string"
+              },
+              {
+                "id": 34,
+                "name": "SecurityType",
+                "required": false,
+                "type": "string"
+              }
+            ]
+          }
+        },
+        {
+          "id": 9,
+          "name": "LastPx",
+          "required": false,
+          "type": "double"
+        },
+        {
+          "id": 10,
+          "name": "OrderCapacity",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "id": 11,
+          "name": "ExecID",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "id": 12,
+          "name": "LastQty",
+          "required": false,
+          "type": "double"
+        },
+        {
+          "id": 13,
+          "name": "CumQty",
+          "required": false,
+          "type": "double"
+        },
+        {
+          "id": 14,
+          "name": "OrigClOrdID",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "id": 15,
+          "name": "Account",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "id": 16,
+          "name": "ComplianceID",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "id": 17,
+          "name": "AvgPx",
+          "required": false,
+          "type": "double"
+        },
+        {
+          "id": 18,
+          "name": "ClOrdID",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "id": 19,
+          "name": "ExecType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "id": 20,
+          "name": "LeavesQty",
+          "required": false,
+          "type": "double"
+        },
+        {
+          "id": 21,
+          "name": "OrdType",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "id": 22,
+          "name": "Price",
+          "required": false,
+          "type": "double"
+        },
+        {
+          "id": 23,
+          "name": "Currency",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "id": 24,
+          "name": "OrdStatus",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "id": 25,
+          "name": "TimeInForce",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "id": 26,
+          "name": "ExecInst",
+          "required": false,
+          "type": {
+            "type": "list",
+            "element-id": 35,
+            "element": "string",
+            "element-required": true
+          }
+        },
+        {
+          "id": 27,
+          "name": "HandlInst",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "id": 28,
+          "name": "Parties",
+          "required": false,
+          "type": {
+            "type": "list",
+            "element-id": 36,
+            "element": {
+              "type": "struct",
+              "fields": [
+                {
+                  "id": 37,
+                  "name": "PartyID",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "id": 38,
+                  "name": "PartyIDSource",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "id": 39,
+                  "name": "PartyRole",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "id": 40,
+                  "name": "PtysSubGrp",
+                  "required": false,
+                  "type": {
+                    "type": "list",
+                    "element-id": 41,
+                    "element": {
+                      "type": "struct",
+                      "fields": [
+                        {
+                          "id": 42,
+                          "name": "PartySubID",
+                          "required": false,
+                          "type": "string"
+                        },
+                        {
+                          "id": 43,
+                          "name": "PartySubIDType",
+                          "required": false,
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "element-required": true
+                  }
+                }
+              ]
+            },
+            "element-required": true
+          }
+        },
+        {
+          "id": 29,
+          "name": "Text",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "id": 30,
+          "name": "_aw",
+          "required": true,
+          "type": {
+            "type": "struct",
+            "fields": [
+              {
+                "id": 44,
+                "name": "record_uid",
+                "required": true,
+                "type": "uuid"
+              },
+              {
+                "id": 45,
+                "name": "ingest_time",
+                "required": true,
+                "type": "timestamptz"
+              },
+              {
+                "id": 46,
+                "name": "paths_with_error",
+                "required": true,
+                "type": {
+                  "type": "list",
+                  "element-id": 47,
+                  "element": "string",
+                  "element-required": true
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "default-spec-id": 0,
+  "partition-specs": [
+    {
+      "spec-id": 0,
+      "fields": []
+    }
+  ],
+  "last-partition-id": 999,
+  "default-sort-order-id": 0,
+  "sort-orders": [
+    {
+      "order-id": 0,
+      "fields": []
+    }
+  ],
+  "properties": {
+    "write.format.default": "PARQUET",
+    "write.parquet.compression-codec": "zstd"
+  },
+  "current-snapshot-id": 4947677790543560252,
+  "refs": {
+    "main": {
+      "snapshot-id": 4947677790543560252,
+      "type": "branch"
+    }
+  },
+  "snapshots": [
+    {
+      "sequence-number": 1,
+      "snapshot-id": 4947677790543560252,
+      "timestamp-ms": 1751125274080,
+      "summary": {
+        "operation": "append",
+        "added-data-files": "3",
+        "added-records": "1000",
+        "added-files-size": "92679",
+        "changed-partition-count": "1",
+        "total-records": "1000",
+        "total-files-size": "92679",
+        "total-data-files": "3",
+        "total-delete-files": "0",
+        "total-position-deletes": "0",
+        "total-equality-deletes": "0",
+        "iceberg-version": "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+      },
+      "manifest-list": "data/persistent/segfault_issue//metadata/snap-4947677790543560252-1-62b436e3-60f4-46f2-94a4-bb3cfc901ad9.avro",
+      "schema-id": 0
+    }
+  ],
+  "statistics": [],
+  "partition-statistics": [],
+  "snapshot-log": [
+    {
+      "timestamp-ms": 1751125274080,
+      "snapshot-id": 4947677790543560252
+    }
+  ],
+  "metadata-log": [
+    {
+      "timestamp-ms": 1751125273392,
+      "metadata-file": "data/persistent/segfault_issue//metadata/00000-4a4e669c-c68a-4d48-b9d3-1593344d4bb1.metadata.json"
+    }
+  ]
+}
